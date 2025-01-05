@@ -6,14 +6,14 @@ spec:
   replicas: 3 
   selector:
     matchLabels:
-      app: node-app-DevOps-Project
+      app: node-app-devops-project
   template:
     metadata:
       labels:
-        app: node-app-DevOps-Project
+        app: node-app-devops-project
     spec:
       containers:
-      - name: node-app-DevOps-Project
+      - name: node-app-devops-project
         image: public.ecr.aws/x9f9n9e7/aws_cicd_pipeline_ecr:node_app_DevOps_Proj_v0.8
         ports:
         - containerPort: 3000
@@ -26,7 +26,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: node-app-DevOps-Project
+    app: node-app-devops-project
   ports:
   - protocol: TCP
     port: 80
