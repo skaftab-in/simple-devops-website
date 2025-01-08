@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-app-devops-project
-        image: public.ecr.aws/x9f9n9e7/aws_cicd_pipeline_ecr:node_app_DevOps_Proj_v0.8
+        image: public.ecr.aws/x9f9n9e7/k8s_end_to_end_deployment:node_app_DevOps_Proj_v0.6
         ports:
         - containerPort: 3000
 
